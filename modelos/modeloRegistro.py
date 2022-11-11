@@ -43,29 +43,3 @@ class Modelo_Registros(QtWidgets.QMainWindow):
 
 
 
-    #Se reciven los valores ingresados por el usuario
-    def crearRegistro(self, tareaT, diaT, horaT, prioridadT, descripcionT):
-        #Se establece la conexión con la base de datos
-        cursor = self.connection2.cursor()
-        #Se realiza la sentencia sql que modificará la base de datos
-        sql = """INSERT INTO registros(tarea, dia, prioridad, hora, descripcion) VALUES 
-        ('{}', '{}', '{}', '{}', '{}')""".format( tareaT, diaT, horaT, prioridadT, descripcionT)
-        true = True
-        false = False
-        #Sen envia la sentencia sql para agregar un nuevo registro.
-        #En caso que falle se modifica una variable la cual avisar al usuario
-        try:
-            count = cursor.execute(sql)
-            self.connection2.commit()
-            cursor.close()
-            state = true
-
-        except sqlite3.Error as error:
-            print("Failed to insert data into sqlite table", error)
-            state = false
-        finally:
-            #Se cierra la conexion con la base de datos
-            if self.connection2:
-                self.connection2.close()
-                print("The SQLite connection is closed")
-            return state

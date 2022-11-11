@@ -7,7 +7,6 @@ from PyQt5.QtWidgets import QMessageBox
 from vistas.registro import Ui_registros
 #Se accede a todas las propiedades y elementos de la vista principal
 from controladores.Controlador_Consultar import Controlador_consultar
-from controladores.Controlador_Crear import Controlador_crear
 
 from modelos.modeloRegistro import Modelo_Registros
 
@@ -87,9 +86,7 @@ class Controlador_registros(QtWidgets.QMainWindow):
         else:
             alerta = QMessageBox.information(self, 'Alerta', "No has seleccionado una tarea", QMessageBox.Ok)
 
-    def abrirCrear(self):
-        self.abrir = Controlador_crear()
-        self.abrir.show()
+
 
 
 
