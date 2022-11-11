@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registros</class>
+ <widget class="QDialog" name="registros">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Agenda</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes/images.qrc">
+    <normaloff>:/images/calendar.png</normaloff>:/images/calendar.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-110</y>
+     <width>791</width>
+     <height>751</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/fondo.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>671</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 16pt &quot;Arial Black&quot;;
+background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0.391089 rgba(243, 243, 243, 133), stop:0.915842 rgba(165, 157, 153, 133));</string>
+   </property>
+   <property name="text">
+    <string>Mi agenda semanal :D</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="commandLinkButton_Eliminar">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>160</y>
+     <width>131</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qconicalgradient(cx:0.488, cy:0.494318, angle:123.4, stop:0 rgba(251, 251, 251, 201));</string>
+   </property>
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="imagenes/images.qrc">
+     <normaloff>:/images/delate.png</normaloff>:/images/delate.png</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="commandLinkButton_Editar">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>160</y>
+     <width>141</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qconicalgradient(cx:0.488, cy:0.494318, angle:123.4, stop:0 rgba(251, 251, 251, 201));</string>
+   </property>
+   <property name="text">
+    <string>Editar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="imagenes/images.qrc">
+     <normaloff>:/images/update.png</normaloff>:/images/update.png</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="commandLinkButton_Consultar">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>131</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qconicalgradient(cx:0.488, cy:0.494318, angle:123.4, stop:0 rgba(251, 251, 251, 201));</string>
+   </property>
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>imagenes/search.png</normaloff>imagenes/search.png</iconset>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="commandLinkButton_Crear">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>131</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qconicalgradient(cx:0.488, cy:0.494318, angle:123.4, stop:0 rgba(251, 251, 251, 201));</string>
+   </property>
+   <property name="text">
+    <string>Crear</string>
+   </property>
+   <property name="icon">
+    <iconset resource="imagenes/images.qrc">
+     <normaloff>:/images/create.png</normaloff>:/images/create.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Seleccion un dia de la semana:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Dia">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>120</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Todas las tareas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Lunes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Martes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Miercoles</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jueves</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Viernes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sabado</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Domingo</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>61</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/Cinvestav.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>0</y>
+     <width>61</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/note.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>581</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qconicalgradient(cx:0.488, cy:0.494318, angle:123.4, stop:0 rgba(255, 255, 255, 212));</string>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>144</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Tarea</string>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+    <property name="background">
+     <color>
+      <red>85</red>
+      <green>255</green>
+      <blue>127</blue>
+     </color>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Dia</string>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>248</green>
+      <blue>53</blue>
+     </color>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Prioridad</string>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>170</green>
+      <blue>127</blue>
+     </color>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Hora</string>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>170</green>
+      <blue>0</blue>
+     </color>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

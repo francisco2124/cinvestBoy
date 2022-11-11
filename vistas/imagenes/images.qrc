@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="images">
+    <file>calendar.png</file>
+    <file>save.png</file>
+    <file>addEvent.png</file>
+    <file>Cinvestav.png</file>
+    <file>note.png</file>
+    <file>search.png</file>
+    <file>update.png</file>
+    <file>updateEvent.png</file>
+    <file>viewEvent.png</file>
+    <file>fondo2.jpg</file>
+    <file>alta.png</file>
+    <file>create.png</file>
+    <file>fondo.jpg</file>
+    <file>delate.png</file>
+    <file>update.png</file>
+  </qresource>
+</RCC>
